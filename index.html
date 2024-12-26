@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Solutions</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Header Styling */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #2a7d2a;
+      color: white;
+    }
+
+    header .logo h4 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 0%;
+
+    }
+    header .logo img{
+      height: 100px;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #aed581;
+    }
+
+    /* Main Content Styling */
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 2rem;
+    }
+
+    main .text-content {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    main .image-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Footer Styling */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #2a7d2a;
+      color: white;
+    }
+
+    footer .social-links a {
+      text-decoration: none;
+      color: white;
+      margin-right: 0.5rem;
+      transition: transform 0.3s;
+    }
+
+    footer .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    /* Media Queries */
+    @media (max-width: 600px) {
+      header, footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Transition for responsiveness */
+    * {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logoonly.png" alt="Green solutions logo">
+    <h4>Green Solutions</h4>
+  </div>
+  
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="text-content">
+    <h1>Welcome to Green Solutions</h1>
+    <p>At Green Solutions, we are committed to driving technological innovations that promote environmental sustainability. Our mission is to create solutions that harmonize technology with nature, ensuring a brighter and greener future for generations to come.</p>
+    <p>Our projects span renewable energy, waste management, and smart eco-friendly technologies designed to minimize the carbon footprint while maximizing efficiency.</p>
+  </div>
+  <div class="image-content">
+    <img src="logo.png" alt="Eco-Friendly Technology">
+  </div>
+</main>
+
+<footer>
+  <div class="social-links">
+    <a href="#">Facebook</a>
+    <a href="#">Twitter</a>
+    <a href="#">LinkedIn</a>
+  </div>
+  <div class="copyright">&copy; 2024 Green Solutions</div>
+</footer>
+
+</body>
+</html>
